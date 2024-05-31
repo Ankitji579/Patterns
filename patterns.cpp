@@ -3,14 +3,23 @@
 using namespace std;
 
 int main(){
-int b=16;
-int a =sqrt(b);
-int x;
-    cout<<"Write the number"<<endl;
-    cin>>x;
-    cout<<x+a<<endl;
-    cout<<x+a+1<<endl;
+
+int n;
+cin>>n;
+for(int row=0;row<n;row++){
+    for(int col=0;col<row+1;col++){
+        cout<<"*";
+    }
+    
+    cout<<"\n";
+}
+    for(int row=0;row<n;row++){
+        for(int col=0;col<n-row;col++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
     
    
-
+    return 0;
 }
